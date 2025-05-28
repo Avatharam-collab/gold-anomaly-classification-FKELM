@@ -1,0 +1,17 @@
+Readme.txt
+
+step by step procedure for the code:
+
+1. Data Preparation: The gold geochemical dataset is loaded and sorted by removing un-necessary data columns. Imputation, scaling, Yeo-Johnson transformation, PCA (95%), and SMOTE are applied in the data preprocessing step. 
+
+2. Feature Engineering & Outlier Detection: The elemental ratios like Fe/As, Cu/Zn, W/S, and Sb/Te are computed to increase fertility discrimination. The outliers of the dataset removed by using of Turkey's IQR & standard deviation methods.
+
+3. Data Visualization: Kernel density plots and scatter plot are used to visually compare fertile vs. unfertile magmatic systems.  
+
+4. Compositional Data Analysis: CLR transformation is used to handle the compositional bias in geochemical elements. principal component analysis (PCA) gave the relation between each geochemical elements.
+
+5. Model Training & Evaluation: ML Models MLP, SVM, RF, KNN, GB, DT, and Ensemble are trained using 10-fold cross-validation. A fuzzy logic-based Kernel ELM is also implemented using a custom kernel with type-2 fuzzy sets. 
+
+6. Model Performance & Feature Importance: All ML models are evaluated on accuracy, precision, recall, and F1-score. FKELM’s element importance is plotted to highlight key elements to fertility prediction.
+
+Note: This steps understandable of the code.
