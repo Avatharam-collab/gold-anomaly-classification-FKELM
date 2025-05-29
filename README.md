@@ -1,1 +1,1 @@
-# gold-anomaly-classification-ML-FKELM
+# gold-anomaly-classification-FKELM
